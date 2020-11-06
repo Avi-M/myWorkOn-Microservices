@@ -23,3 +23,5 @@ func main() {
 	log.Println("Listening...")
 	http.ListenAndServe(":3000", mux)
 }
+
+//once you run the file then visit on http://localhost/time
