@@ -79,7 +79,7 @@ func DeleteProductEndpoint(w http.ResponseWriter, req *http.Request) {
 func main() {
 	router := mux.NewRouter()
 	orders = append(orders, Order{ID: "1", CustomerName: "Nic", OrderedAt: "2009-11-10 23:00:00", Items: &Item{ItemCode: "D6b89n", LineItemID: "CA", Description: "Work or play, the Redmi 9i is an ideal companion that helps you go through your everyday tasks with ease. ", Quantity: 12}})
-	//orders = append(orders, Person{ID: "2", Firstname: "Maria", Lastname: "Raboy"})
+	
 	router.HandleFunc("/orders", GetordersEndpoint).Methods("GET")
 	router.HandleFunc("/orders/{id}", GetProductEndpoint).Methods("GET")
 	router.HandleFunc("/orders/{id}", CreateProductEndpoint).Methods("POST")
