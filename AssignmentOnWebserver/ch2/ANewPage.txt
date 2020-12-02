@@ -1,0 +1,2 @@
+this is my first page
+ run main.go first ,then visit on:  http://localhost:8080/view/ANewPage
