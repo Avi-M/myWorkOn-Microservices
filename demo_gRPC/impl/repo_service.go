@@ -8,7 +8,7 @@ import (
 	"strconv"
 )
 
-//RepositoryServiceGrpcImpl is a implementation of RepositoryService Grpc Service.
+//RepositoryServiceGrpcImpl is a implementation of Repository Grpc Service.
 type RepositoryServiceGrpcImpl struct {
 	domain.UnimplementedRepositoryServiceServer
 }
