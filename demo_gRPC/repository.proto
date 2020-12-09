@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+package domain;
+
+
+message Repository {
+	int64 id  = 1;
+	string name = 2;
+	int64 userId = 3;
+	bool isPrivate = 4;
+}
+
+//RepositoryService Definition
+service RepositoryService {
+	rpc add (domain.Repository) returns (AddRepositoryResponse);
+}
+ 
+message AddRepositoryResponse {
+	domain.Repository addedRepository = 1;
+	Error error = 2;
+}
+message Error {
+	string code = 1;
+	string message = 2;
+}
